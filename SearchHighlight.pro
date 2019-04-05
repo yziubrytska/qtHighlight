@@ -12,12 +12,12 @@ TARGET = SearchHighlight
 TEMPLATE = app
 CONFIG += c++11
 
-SOURCES += main.cpp\
-        widget.cpp \
-    highlight.cpp
+SOURCES += Sources/main.cpp\
+        Sources/widget.cpp \
+    Sources/highlight.cpp
 
-HEADERS  += widget.h \
-   highlight.h
+HEADERS  += Headers/widget.h \
+   Headers/highlight.h
 
 FORMS    += \
-    widget.ui
+    Forms/widget.ui

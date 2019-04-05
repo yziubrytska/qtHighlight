@@ -1,7 +1,8 @@
-#include "widget.h"
+
+#include "Headers/highlight.h"
+#include "Headers/widget.h"
 #include "ui_widget.h"
 
-#include "highlight.h"
 
 
 Form::Form(QWidget *parent) :

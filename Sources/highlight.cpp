@@ -1,7 +1,6 @@
-#include "highlight.h"
+#include "Headers/highlight.h"
 
 #include <QTextCharFormat>
-#include <iostream>
 
 SearchHighLight::SearchHighLight(QTextDocument* parent) : BaseClass(parent)
 {

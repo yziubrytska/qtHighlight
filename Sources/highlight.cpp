@@ -10,7 +10,6 @@ SearchHighLight::SearchHighLight(QTextDocument* parent) : BaseClass(parent)
 
 void SearchHighLight::highlightBlock(const QString& text)
 {
-    std::cout<<"highlightBlock " << text.toStdString() << std::endl;
     QRegularExpressionMatchIterator matchIterator = mPattern.globalMatch(text);
     if (matchIterator.hasNext())
     {
@@ -36,7 +35,6 @@ bool SearchHighLight::compareLength(const QString&first, const QString& second) 
 void SearchHighLight::searchText(const QString& text)
 {
     mHighlight = false;
-    std::cout << "Whole Text "<<text.toStdString() << std::endl;
     QRegExp rx("(\\ |\\,|\\.|\\:|\\t)");
     QStringList strList = text.split(rx);
     qSort(strList.begin(), strList.end(),compareLength);

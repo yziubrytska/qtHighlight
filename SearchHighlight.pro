@@ -17,7 +17,7 @@ SOURCES += main.cpp\
     highlight.cpp
 
 HEADERS  += widget.h \
-    highlight.h
+   highlight.h
 
 FORMS    += \
     widget.ui
